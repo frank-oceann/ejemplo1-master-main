@@ -19,6 +19,10 @@ export const obtenerAlumnos = async()=>{
     edad: doc.data()['edad'],
     correo: doc.data()['correo']
   }
+    alumnos.push(alumno) //envia los datos creados arriba
+
     });
+    console.log("TEST")
+    console.log(alumnos)
     return alumnos
 }
